@@ -81,12 +81,7 @@ def read():
 # UPDATE PAGE
 @app.route('/update/<id>', methods=['GET','POST'])
 def update(id):
-
-    print(id)
-
-    if not id:
-        return redirect(url_for('read'))
-
+    
     if request.method == 'POST':
         name = request.form['name']
         age = request.form['age']
