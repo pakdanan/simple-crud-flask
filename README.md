@@ -6,17 +6,17 @@ How to run (linux/debian):
 
 <strong>VIRTUAL ENVIRONMENT</strong>
 
-create a virtual environment:<br>
+<strong>create a virtual environment:</strong><br>
 (terminal) python3 -m venv venv_simple_crud
 
-activate the venv_simple_crud:<br>
+<strong>activate the venv_simple_crud:</strong><br>
 (terminal)source venv_crud/bin/activate
 
 <strong>INSTALL FLASK</strong>
 
 (terminal) pip3 install -r requirements.txt <br>
 
-export default Flask environments variables:<br>
+<strong>export default Flask environments variables:</strong><br>
 (terminal) export FLASK_APP=app.py<br>
 (terminal) export FLASK_ENV=development
 
