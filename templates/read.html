@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ <html> 
+    <head>
+        <meta charset="utf-8">
+      
+        <title>Read</title>
+        
+    </head>
+    <body>
+        <a href="{{ url_for('create') }}">Create new users</a>
+
+        {% for message in get_flashed_messages() %}
+            {% if message %}
+                <p style="color:red">{{ message }}</p>
+            {% endif %}
+        {% endfor%}
+
+        <ul>                       
+            {% if users %}
+
+                {% for dado in users %}
+
+                    <li> id: {{ dado.id }} </li>
+                        <li> Nome: {{ dado.name }} </li>
+                        <li> Idade: {{ dado.age }} </li>
+                        <a href ="{{ url_for('update',id=dado.id) }}">update</a>
+                        <a href ="{{ url_for('delete',id=dado.id) }}">delete</a>
+                        <br>
+                        <br>
+
+                {% endfor %}
+
+            {% else %}
+                <p><strong>No users found</strong></p>
+            {% endif %} 
+        </ul>
+        
+    </body>
+</html>
