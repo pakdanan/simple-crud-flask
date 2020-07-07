@@ -7,7 +7,7 @@ How to run (linux):
   (terminal) create a virtual environment:<br>
       python3 -m venv venv_simple_crud
   
-  (terminal) activate:<br>
+  (terminal) activate the venv_simple_crud:<br>
        source venv_crud/bin/activate
        
   (terminal) export default Flask environments variables:<br>
