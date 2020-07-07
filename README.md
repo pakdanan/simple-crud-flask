@@ -16,9 +16,9 @@ activate the venv_simple_crud:<br>
 
 (terminal) pip3 install -r requirements.txt <br>
 
-(terminal) export default Flask environments variables:<br>
-export FLASK_APP=app.py<br>
-export FLASK_ENV=development
+export default Flask environments variables:<br>
+(terminal) export FLASK_APP=app.py<br>
+(terminal) export FLASK_ENV=development
 
 <strong>CREATE A SQLITE DATABASE </strong>
 
