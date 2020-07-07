@@ -1,6 +1,6 @@
 # Simple_CRUD_Flask
 
-<strong>A simple crud example in Flask + SQLAlchemy</strong>
+<strong>A simple crud example in Flask + SQLAlchemy + SQLite</strong>
 
 How to run (linux/debian):
 
