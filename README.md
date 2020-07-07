@@ -1,5 +1,6 @@
 # Simple_CRUD_Flask
-A simple crud example in Flask + SQLAlchemy
+
+# A simple crud example in Flask + SQLAlchemy
 
 How to run (linux):
 
@@ -10,9 +11,10 @@ How to run (linux):
        source venv_crud/bin/activate
        
   (terminal) export default Flask environments variables:<br>
-       export FLASK_APP=app.py
+       export FLASK_APP=app.py<br>
        export FLASK_ENV=development
        
    (terminal) Flask run
-              
-       
+
+
+    
