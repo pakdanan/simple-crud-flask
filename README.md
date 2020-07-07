@@ -4,17 +4,31 @@
 
 How to run (linux):
 
-  (terminal) create a virtual environment:<br>
-      python3 -m venv venv_simple_crud
+<strong>VIRTUAL ENVIRONMENT</strong>
+
+(terminal) create a virtual environment:<br>
+    python3 -m venv venv_simple_crud
+
+(terminal) activate the venv_simple_crud:<br>
+     source venv_crud/bin/activate
+
+(terminal) export default Flask environments variables:<br>
+     export FLASK_APP=app.py<br>
+     export FLASK_ENV=development
+     
+<strong>CREATE A SQLite Database </strong>
+
+(terminal) Flask Shell
+ 
+(terminal) from app import db
   
-  (terminal) activate the venv_simple_crud:<br>
-       source venv_crud/bin/activate
-       
-  (terminal) export default Flask environments variables:<br>
-       export FLASK_APP=app.py<br>
-       export FLASK_ENV=development
-       
-   (terminal) Flask run
+(terminal) db.create_all()
+  
+(terminal) exit()
+
+<strong>RUN! </strong>
+
+(terminal) Flask run
 
 
     
