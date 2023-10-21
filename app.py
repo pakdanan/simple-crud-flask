@@ -7,30 +7,20 @@ from flask import (Flask,
                    flash)
 from flask_sqlalchemy import SQLAlchemy
 
-
-# local path to find sqlite database file
-basedir = os.path.abspath(os.path.dirname(__file__))
-
-
 #app object start  
 app = Flask(__name__)
 
 #app config
-app.config['SECRET_KEY'] = 'crud'
-app.config['FLASK_ENV']= 'development'
+app.config['SECRET_KEY'] = 'My_SeCR3t!'
 
 # database uri
-app.config['SQLALCHEMY_DATABASE_URI'] =\
-    'sqlite:///' + os.path.join(basedir, 'bd.sqlite')
-app.config ['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///simple_crud.db'
 
 db = SQLAlchemy(app)
 
 
 # class User inherit from sql alchemy class
 class User(db.Model):
-
-    #__tablename__ = 'users'
 
     id = db.Column(db.Integer,primary_key=True)
     name = db.Column(db.String(64))
@@ -52,7 +42,6 @@ def index():
     return redirect(url_for('read'))
 
 
-
 # CREATE PAGE
 @app.route('/create', methods=['GET','POST'])
 def create():
@@ -66,9 +55,8 @@ def create():
         db.session.commit()
         
         return redirect(url_for('read'))
-
-    return render_template('create.html') 
-
+    else:
+        return render_template('create.html') 
 
 
 # READ PAGE
@@ -93,11 +81,9 @@ def update(id):
         db.session.commit()
 
         return redirect(url_for('read'))
-
-
-    user = User.query.filter_by(id=id).first()   
-    return render_template('update.html', user=user)
-
+    else:
+        user = User.query.filter_by(id=id).first()   
+        return render_template('update.html', user=user)
 
 
 # DELETE PAGE redirect for read page and flash a message with deleted user

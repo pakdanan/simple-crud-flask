@@ -18,13 +18,13 @@
         <ul>                       
             {% if users %}
 
-                {% for dado in users %}
+                {% for user in users %}
 
-                    <li> id: {{ dado.id }} </li>
-                        <li> Nome: {{ dado.name }} </li>
-                        <li> Idade: {{ dado.age }} </li>
-                        <a href ="{{ url_for('update',id=dado.id) }}">update</a>
-                        <a href ="{{ url_for('delete',id=dado.id) }}">delete</a>
+                    <li> id: {{ user.id }} </li>
+                        <li> Name: {{ user.name }} </li>
+                        <li> Age: {{ user.age }} </li>
+                        <a href ="{{ url_for('update',id=user.id) }}">update</a>
+                        <a href ="{{ url_for('delete',id=user.id) }}">delete</a>
                         <br>
                         <br>
 
