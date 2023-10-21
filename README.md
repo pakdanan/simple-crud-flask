@@ -2,27 +2,23 @@
 
 <strong>A simple crud example in Flask + SQLAlchemy + SQLite</strong>
 
-How to run (linux/debian):
+How to run (windows):
 
 <strong>VIRTUAL ENVIRONMENT</strong>
 
 <strong>create a virtual environment:</strong><br>
-(terminal) python3 -m venv venv_simple_crud
+(terminal) py -3 -m venv venv_simple_crud
 
 <strong>activate the venv_simple_crud:</strong><br>
-(terminal)source venv_crud/bin/activate
+(terminal).\venv_simple_crud\Scripts\activate
 
 <strong>INSTALL FLASK</strong>
 
-(terminal) pip3 install -r requirements.txt <br>
-
-<strong>export default Flask environments variables:</strong><br>
-(terminal) export FLASK_APP=app.py<br>
-(terminal) export FLASK_ENV=development
+(terminal) pip install -r requirements.txt <br>
 
 <strong>CREATE A SQLITE DATABASE </strong>
 
-(terminal) Flask Shell
+(terminal) flask shell
 
 (terminal) from app import db
 
@@ -33,6 +29,3 @@ How to run (linux/debian):
 <strong>RUN!</strong>
 
 (terminal) Flask run
-
-
-    
