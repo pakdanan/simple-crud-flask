@@ -7,10 +7,10 @@ How to run (windows):
 <strong>VIRTUAL ENVIRONMENT</strong>
 
 <strong>create a virtual environment:</strong><br>
-(terminal) py -3 -m venv venv_simple_crud
+(terminal) py -3 -m venv .venv
 
-<strong>activate the venv_simple_crud:</strong><br>
-(terminal).\venv_simple_crud\Scripts\activate
+<strong>activate the .venv:</strong><br>
+(terminal).\.venv\Scripts\activate
 
 <strong>INSTALL FLASK</strong>
 
